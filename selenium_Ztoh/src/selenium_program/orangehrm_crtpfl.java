@@ -30,7 +30,9 @@ public class orangehrm_crtpfl {
 		login.click();
 		Thread.sleep(2000);
 		
-		By myinf=By.xpath("//span[@class=\"oxd-text oxd-text--span oxd-main-menu-item--name\"and text()=\"My Info\"]");
+		
+		//By myinf=By.xpath("//span[@class=\"oxd-text oxd-text--span oxd-main-menu-item--name\"and text()=\"My Info\"]");
+		By myinf=By.xpath("//a[@class='oxd-main-menu-item active']");
 		WebElement myinfo=d.findElement(myinf);
 		myinfo.click();
 		Thread.sleep(2000);
