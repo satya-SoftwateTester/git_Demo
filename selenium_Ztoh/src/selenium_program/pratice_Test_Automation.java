@@ -73,6 +73,15 @@ public class pratice_Test_Automation {
 		submit2.click();
 		Thread.sleep(2000);
 		
+		By crs=By.xpath("//a[text()=\"Courses\"]");
+		WebElement course=d.findElement(crs);
+		course.click();
+		Thread.sleep(2000);
+		
+		By ftrl=By.xpath("//a[text()=\"Start Free Trial\"]");
+		WebElement frtrl=d.findElement(ftrl);
+		frtrl.click();
+		
 		
 		
 	}
