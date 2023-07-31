@@ -19,6 +19,32 @@ public class pratice_Test_Automation {
 		pratice.click();
 		Thread.sleep(2000);
 		
+		By tstlgn=By.xpath("//a[text()=\"Test Login Page\"]");
+		WebElement testlogin=d.findElement(tstlgn);
+		testlogin.click();
+		Thread.sleep(2000);
+		
+		By unm=By.xpath("//input[@id=\"username\"]");
+		WebElement usrnm=d.findElement(unm);
+		usrnm.sendKeys("student");
+		Thread.sleep(2000);
+		
+		By pwd=By.xpath("//input[@id=\"password\"]");
+		WebElement pswd=d.findElement(pwd);
+		pswd.sendKeys("Password123");
+		Thread.sleep(2000);
+		
+		By smt=By.id("submit");
+		WebElement submit=d.findElement(smt);
+		submit.click();
+		Thread.sleep(2000);
+		
+		By lgt=By.xpath("//a[text()=\"Log out\"]");
+		WebElement logout=d.findElement(lgt);
+		logout.click();
+		
+		
+		
 	}
 
 }
