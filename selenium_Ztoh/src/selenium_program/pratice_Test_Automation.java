@@ -58,6 +58,21 @@ public class pratice_Test_Automation {
 		submit1.click();
 		Thread.sleep(2000);
 		
+		By unm2=By.xpath("//input[@id=\"username\"]");
+		WebElement usrnm2=d.findElement(unm2);
+		usrnm2.sendKeys("student");
+		Thread.sleep(2000);
+		
+		By pwd2=By.xpath("//input[@id=\"password\"]");
+		WebElement pswd2=d.findElement(pwd2);
+		pswd2.sendKeys("Passwd123");
+		Thread.sleep(2000);
+		
+		By smt2=By.id("submit");
+		WebElement submit2=d.findElement(smt2);
+		submit2.click();
+		Thread.sleep(2000);
+		
 		
 		
 	}
