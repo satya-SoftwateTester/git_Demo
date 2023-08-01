@@ -57,8 +57,13 @@ Thread.sleep(4000);
 
 By mobno=By.id("id_4");
 WebElement mobileno=d.findElement(mobno);
-mobileno.sendKeys("123456789");
+mobileno.sendKeys("9348433541");
 Thread.sleep(4000);
+
+By nxt=By.xpath("//button[@class=\"btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary\"]");
+WebElement next=d.findElement(nxt);
+next.click();
+Thread.sleep(2000);
 
 
 
