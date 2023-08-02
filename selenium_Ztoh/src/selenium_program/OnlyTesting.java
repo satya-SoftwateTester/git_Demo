@@ -23,6 +23,9 @@ By pnt=By.name("parent1");
 WebElement prnt=d.findElement(pnt);
 prnt.sendKeys("abc20");
 
+By cld=By.id("child_1");
+WebElement child=d.findElement(cld);
+child.sendKeys("abc30");
 
 	}
 
