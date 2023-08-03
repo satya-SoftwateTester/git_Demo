@@ -32,6 +32,29 @@ WebElement grndp2=d.findElement(gndp2);
 grndp2.sendKeys("grand2");
 Thread.sleep(2000);
 
+By pnt2=By.id("parent_2");
+WebElement prnt2=d.findElement(pnt2);
+prnt2.sendKeys("pnt2");
+Thread.sleep(2000);
+
+By cld2=By.name("child2");
+WebElement child2=d.findElement(cld2);
+child2.sendKeys("child2");
+Thread.sleep(2000);
+
+By tm=By.xpath("//abbr[@class=\"published\" and text()=\"19:37\"]");
+WebElement time=d.findElement(tm);
+time.click();
+Thread.sleep(2000);
+
+By ttrp=By.xpath("//a[text()=\"Tooltip\"]");
+WebElement tooltrip=d.findElement(ttrp);
+tooltrip.click();
+Thread.sleep(2000);
+
+
+d.close();
+
 
 	}
 
