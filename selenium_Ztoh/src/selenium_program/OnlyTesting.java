@@ -27,6 +27,12 @@ By cld=By.id("child_1");
 WebElement child=d.findElement(cld);
 child.sendKeys("abc30");
 
+By gndp2=By.id("gparent_2");
+WebElement grndp2=d.findElement(gndp2);
+grndp2.sendKeys("grand2");
+Thread.sleep(2000);
+
+
 	}
 
 }
