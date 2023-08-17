@@ -14,17 +14,17 @@ public class Execution {
 		Login.orange();
 		
 		
-		Login.user_1();
-		Login.pwd1();
+		Login.action_user_1();
+		Login.action_pwd1();;
 		Login.lgn();
 		Thread.sleep(2000);
-//		logout.pfle();
-//		Thread.sleep(2000);
-//		logout.logot();
-		create_prfl.mf();
-		create_prfl.fnm();
-		create_prfl.ei();
-		create_prfl.sv();
+		logout.pfle();
+		Thread.sleep(2000);
+		logout.logot();
+//		create_prfl.mf();
+//		create_prfl.fnm();
+//		create_prfl.ei();
+//		create_prfl.sv();
 		
 		
 		
