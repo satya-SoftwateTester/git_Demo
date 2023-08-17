@@ -14,8 +14,8 @@ public class Execution {
 		Login.orange();
 		
 		
-		Login.user_1();
-		Login.pwd1();
+		Login.action_user_1();
+		Login.action_pwd1();;
 		Login.lgn();
 		Thread.sleep(2000);
 //		logout.pfle();
