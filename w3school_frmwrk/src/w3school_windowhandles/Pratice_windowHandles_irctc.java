@@ -35,7 +35,7 @@ public class Pratice_windowHandles_irctc {
 				By x=By.xpath("//button[@class=\"btn btn-link px-3 collapsed\" and text()=\"What are the advantages of online bus booking?\"]");
 				WebElement y=d.findElement(x);
 				y.click();
-				Thread.sleep(2000);
+				Thread.sleep(2000); 
 				
 
 			}
