@@ -61,30 +61,30 @@ public class window_handles
 				message.sendKeys("hii how are you");
 
 				//d.close();
-				
+
 			}
 		}
-		
+
 		d.switchTo().window(baseid);
-		
+
 		By unm=By.name("username");
 		WebElement user=d.findElement(unm);
 		user.sendKeys("Admin");
 		Thread.sleep(2000);
-		
+
 		By pwd=By.name("password");
 		WebElement password=d.findElement(pwd);
 		password.sendKeys("admin123");
 		Thread.sleep(2000);
-		
+
 		By lgn=By.xpath("//button[@class=\"oxd-button oxd-button--medium oxd-button--main orangehrm-login-button\"]");
 		WebElement login=d.findElement(lgn);
 		login.click();
-		
+
 		d.quit();
-		
-		
-		
+
+
+
 
 
 
