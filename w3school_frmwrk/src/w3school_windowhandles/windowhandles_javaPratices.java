@@ -13,31 +13,52 @@ public class windowhandles_javaPratices extends driver_windowhandles
 
 	public static WebElement javaptc() 
 	{
-		String ename=drv.getWindowHandle();
-		System.out.println("base page element-"+ename);
-		WebElement ele=drv.findElement(jvptc);
-		return ele;
+//		String ename=drv.getWindowHandle();
+//		System.out.println("base page element-"+ename);
+//		WebElement ele=drv.findElement(jvptc);
+//		return ele;
+		return drv.findElement(jvptc);
+		
 	}
-	public static WebElement  alwindow() 
-	{
-		Set<String>allwindows=drv.getWindowHandles();
-
-		Object[] windows=allwindows.toArray();
-		String window1=	windows[0].toString();
-		String window2=windows[1].toString();
-		drv.switchTo().window(window2);
-
-		return          drv.findElement(adct);
-	}
+//	public static WebElement  alwindow() 
+//	{
+//		Set<String>allwindows=drv.getWindowHandles();
+//
+//		Object[] windows=allwindows.toArray();
+//		String window1=	windows[0].toString();
+//		String window2=windows[1].toString();
+//		drv.switchTo().window(window2);
+//
+//		return          drv.findElement(adct);
+//	}
+	
 	public static void action_ele() throws InterruptedException 
 	{
 		javaptc().click();
 		Thread.sleep(2000);
+		String ename=drv.getWindowHandle();
+		System.out.println("base page element-"+ename);
+		Set<String>allwindows=drv.getWindowHandles();
+		for(String x:allwindows) 
+		{
+			if(!ename.equals(x)) 
+			{
+				drv.switchTo().window(x);
+				drv.findElement(adct).click();
+			}
+		}
+		drv.switchTo().window(ename);
+		drv.close();
+		
+		
 	}
-	public static void action_window2() 
-	{
-		alwindow().click();
-	}
+	
+	
+	
+//	public static void action_window2() 
+//	{
+//		alwindow().click();
+//	}
 
 
 
