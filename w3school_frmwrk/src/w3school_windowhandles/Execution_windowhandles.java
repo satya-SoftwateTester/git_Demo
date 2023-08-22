@@ -6,7 +6,7 @@ public class Execution_windowhandles {
 	{
 		driver_windowhandles.browser();
 		windowhandles_javaPratices.action_ele();
-		windowhandles_javaPratices.action_window2();
+		//windowhandles_javaPratices.action_window2();
 	}
 
 }
