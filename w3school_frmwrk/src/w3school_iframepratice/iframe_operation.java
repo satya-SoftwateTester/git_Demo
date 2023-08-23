@@ -28,16 +28,16 @@ public static WebElement submit()
 	return sbmit;
 }
 
-public static void action_fname() throws InterruptedException 
+public static void action_fname() 
 {
 	input_firstname().sendKeys("satya");
-	Thread.sleep(2000);
+	//Thread.sleep(2000);
 }
 
-public static void action_lname() throws InterruptedException 
+public static void action_lname() 
 {
 	input_lastname().sendKeys("brata");
-	Thread.sleep(2000);
+	//Thread.sleep(2000);
 }
 
 public static void action_submit() throws InterruptedException 

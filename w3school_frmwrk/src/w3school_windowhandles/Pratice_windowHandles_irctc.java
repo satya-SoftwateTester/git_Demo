@@ -1,11 +1,14 @@
 package w3school_windowhandles;
 
+import java.time.Duration;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Pratice_windowHandles_irctc {
 
@@ -19,9 +22,14 @@ public class Pratice_windowHandles_irctc {
 		String fstid=d.getWindowHandle();
 		System.out.println("the first window id is "+fstid);
 
-		By bs=By.xpath("//a[@class=\"a\" and text()=\" BUSES \"]");
-		WebElement bus=d.findElement(bs);
-		bus.click();
+		//elplicit wait
+		WebDriverWait mywait=new WebDriverWait(d,Duration.ofSeconds(5));
+		WebElement element=mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class=\"a\" and text()=\" BUSES \"]")));
+		element.click();
+		
+//		By bs=By.xpath("//a[@class=\"a\" and text()=\" BUSES \"]");
+//		WebElement bus=d.findElement(bs);
+		//bus.click();
 
 		Set<String>allwindowid=d.getWindowHandles();
 
