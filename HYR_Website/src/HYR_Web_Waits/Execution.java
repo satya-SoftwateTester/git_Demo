@@ -6,6 +6,7 @@ public class Execution {
 	{
 		driver.browser();
 		wait_operation.selptc_action();
+		Thread.sleep(3000);
 		wait_operation.wait_action1();
 		Thread.sleep(5000);
 		wait_operation.remove_ad_action();
