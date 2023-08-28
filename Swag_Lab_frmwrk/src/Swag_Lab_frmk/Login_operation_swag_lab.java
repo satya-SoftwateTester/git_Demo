@@ -23,6 +23,7 @@ public static WebElement pwd()
 	return pwdd;
 	
 }
+
 public static WebElement lgn() 
 {
 	WebElement ln=drv.findElement(login);
@@ -30,7 +31,6 @@ public static WebElement lgn()
 	
 }
 
-	
 public static void user_action() 
 {
 	wait.until(ExpectedConditions.visibilityOfAllElements(id() ));
