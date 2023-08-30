@@ -1,9 +1,9 @@
-package Swag_Lab_frmk;
+package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class logout_Swaglab extends Login_operation_swag_lab
+public class Logout_page extends Login_page
 {
 	static By btn=By.xpath("//button[@id=\"react-burger-menu-btn\"]");
 	static By lgt=By.xpath("//a[@id=\"logout_sidebar_link\"]");
@@ -36,4 +36,5 @@ public class logout_Swaglab extends Login_operation_swag_lab
 		lgot().click();
 	}
 
+	
 }
