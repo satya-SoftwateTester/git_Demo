@@ -18,7 +18,7 @@ public class Basic_operation
 	drv.manage().window().maximize();
 	drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-}
+    }
 	public static void explicity()
 	{
 		wait=new WebDriverWait(drv,Duration.ofSeconds(10));
