@@ -32,16 +32,18 @@ public class Login_page extends Basic_operation
 		return ln;
 		
 	}
-	public static void user_action() 
+	
+	
+	public static void user_action(String Username) 
 	{
 		wait.until(ExpectedConditions.visibilityOfAllElements(id() ));
-		id().sendKeys("standard_user");
+		id().sendKeys(Username);
 		
 	}
-	public static void password_action() 
+	public static void password_action(String password) 
 	{
 		wait.until(ExpectedConditions.visibilityOfAllElements(pwd() ));
-		pwd().sendKeys("secret_sauce");
+		pwd().sendKeys(password);
 	}
 
 	public static void Logn_action() 

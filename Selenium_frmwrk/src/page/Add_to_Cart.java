@@ -7,7 +7,7 @@ public class Add_to_Cart extends Login_page
 {
 
 	static By adcrt=By.id("add-to-cart-sauce-labs-backpack");
-	
+	static By crt=By.xpath("//span[@class=\"shopping_cart_badge\"]");
 	
 	public static WebElement cart() 
 	{
@@ -15,10 +15,21 @@ public class Add_to_Cart extends Login_page
 		return add;
 		
 	}
-	
-	public static void action_cart() 
+	public static WebElement crrt() 
 	{
-		cart().click();
+		WebElement ct=drv.findElement(crt);
+		return ct;
+		
 	}
 	
+	public static void action_cart() throws InterruptedException 
+	{
+		cart().click();
+		Thread.sleep(3000);
+	}
+	
+	public static void action_ct() 
+	{
+		crrt().click();
+	}
 }
