@@ -56,20 +56,20 @@ public static void action_checkout() throws InterruptedException
 	Thread.sleep(3000);
 	ckot().click();
 }
-public static void firstnm_action() throws InterruptedException 
+public static void firstnm_action(String first) throws InterruptedException 
 {
-	frtnm().sendKeys("xyz");
+	frtnm().sendKeys(first);
 	Thread.sleep(3000);
 }
-public static void lastname_action() throws InterruptedException 
+public static void lastname_action( String last) throws InterruptedException 
 {
-	lstnm().sendKeys("sshd");
+	lstnm().sendKeys(last);
 	Thread.sleep(3000);
 	
 }
-public static void zip_code_action() throws InterruptedException
+public static void zip_code_action(String zipcd) throws InterruptedException
 {
-	code().sendKeys("123456");
+	code().sendKeys(zipcd);
 	Thread.sleep(4000);
 	
 }
