@@ -7,7 +7,8 @@ public class facebook extends Login_page
 {
 static By fb=By.xpath("//a[text()=\"Facebook\"]");
 
-static By feml=By.xpath("//input[@id=\":rm:\"]");
+static By feml=By.xpath("//*[@id=\":rm:\"]");
+static By pwd=By.xpath("//*[@id=\":ro:\"]");
 
 
 	
@@ -18,16 +19,28 @@ public static WebElement fcebk()
 	return drv.findElement(fb);
 	
 }
+
 public static WebElement email() 
 {
 	WebElement emailnm=drv.findElement(feml);
 	return emailnm;
 	
 }
-public static void action_email() throws InterruptedException 
+public static WebElement passwd() 
+{
+	WebElement password=drv.findElement(pwd);
+	return password;
+}
+
+public static void action_email(String emailid) throws InterruptedException 
 {
 	Thread.sleep(3000);
-	email().sendKeys("abc@gmail.com");
+	email().sendKeys(emailid);
+}
+public static void action_password(String pass) throws InterruptedException 
+{
+	Thread.sleep(3000);
+	passwd().sendKeys(pass);
 }
 
 }

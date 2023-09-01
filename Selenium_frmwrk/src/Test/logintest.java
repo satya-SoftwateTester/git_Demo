@@ -19,9 +19,9 @@ public class logintest extends Login_page
 		Thread.sleep(3000);
 		Login_page.Logn_action();
 		Thread.sleep(3000);
-		Logout_page.action_btn();
-	    Logout_page.action_logout();
-		drv.quit();
+//		Logout_page.action_btn();
+//	    Logout_page.action_logout();
+//		drv.quit();
 //		Basic_operation.windowhandle();
 //		Thread.sleep(4000);
 //		facebook.action_email();
