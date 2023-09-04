@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import page.create_account;
 import page.facebook;
 
 public class Basic_operation 
@@ -39,9 +40,37 @@ public class Basic_operation
 		{
 			if(!ename.equals(x)) 
 			{
-				drv.switchTo().window(x);
-			}
+				drv.switchTo().window(x); 
+				}
 		}
+				create_account.action_create();
+				Thread.sleep(3000);
+			//	String subchild=drv.getWindowHandle();
+				Set<String>allwindo=drv.getWindowHandles();
+				Object[] windows=allwindo.toArray();
+				String window1=	windows[0].toString();
+				System.out.println(window1);
+				
+				String window2=windows[1].toString();
+				System.out.println(window2);
+
+				String window3=windows[2].toString();
+				System.out.println(window3);
+
+				drv.switchTo().window(window3);
+				
+//				for(String y:allwindo) 
+//				{
+//					if(!(subchild.equals(y))) 
+//					{
+//						drv.switchTo().window(y);
+//					}
+//				}
+				
+				
+			}
+		
+		
 	}
-}
+
 

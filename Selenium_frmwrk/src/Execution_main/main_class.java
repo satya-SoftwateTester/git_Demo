@@ -2,6 +2,7 @@ package Execution_main;
 
 import Test.Addcorttest;
 import Test.Buy_test;
+import Test.Create_Account;
 import Test.facebooktest;
 import Test.logintest;
 
@@ -22,7 +23,11 @@ public class main_class {
 		//		Buy_test.fill_all();
 		//facebooktest.fbvalidcreditional();
 		//facebooktest.fbemptyemailname();
-		facebooktest.fbemptypassword();
+		//facebooktest.fbemptypassword();
+		//facebooktest.fbemptyvalidcredential();
+		//facebooktest.fbinvalidcredential();
+		//Create_Account.creat();
+		Create_Account.validcrdential();
 	}
 
 
