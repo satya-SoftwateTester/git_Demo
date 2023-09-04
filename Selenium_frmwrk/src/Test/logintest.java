@@ -19,14 +19,14 @@ public class logintest extends Login_page
 		Thread.sleep(3000);
 		Login_page.Logn_action();
 		Thread.sleep(3000);
-//		Logout_page.action_btn();
-//	    Logout_page.action_logout();
-//		drv.quit();
-//		Basic_operation.windowhandle();
-//		Thread.sleep(4000);
-//		facebook.action_email();
+		//		Logout_page.action_btn();
+		//	    Logout_page.action_logout();
+		//		drv.quit();
+		//		Basic_operation.windowhandle();
+		//		Thread.sleep(4000);
+		//		facebook.action_email();
 	}
-	
+
 	public static void invalid_username() throws InterruptedException 
 	{
 		Basic_operation.browser();
@@ -39,7 +39,7 @@ public class logintest extends Login_page
 		Thread.sleep(3000);
 		//Logout_page.action_btn();
 		drv.close();
-		
+
 	}
 	public static void invalid_password() throws InterruptedException 
 	{
@@ -78,33 +78,33 @@ public class logintest extends Login_page
 	Thread.sleep(3000);
 	//Logout_page.action_btn();
 	drv.close();
-		
-	}
-	
 
-//		Logout_page.action_btn();;
-//		Logout_page.action_logout();
-		
-//		Add_to_Cart.action_cart();
-//		Thread.sleep(3000);
-//
-//		Add_to_Cart.action_ct();
-//		Thread.sleep(3000);
-//
-//		buy_page.action_checkout();
-//		Thread.sleep(3000);
-//
-//		buy_page.firstnm_action();
-//		buy_page.lastname_action();
-//		buy_page.zip_code_action();
-//		buy_page.continue_action();
-//		Thread.sleep(2000);
-//		buy_page.action_finish();
-//		Thread.sleep(3000);
-//		Logout_page.action_btn();;
-//		Thread.sleep(3000);
-//		
-//		Logout_page.action_logout();
-	
+	}
+
+
+	//		Logout_page.action_btn();;
+	//		Logout_page.action_logout();
+
+	//		Add_to_Cart.action_cart();
+	//		Thread.sleep(3000);
+	//
+	//		Add_to_Cart.action_ct();
+	//		Thread.sleep(3000);
+	//
+	//		buy_page.action_checkout();
+	//		Thread.sleep(3000);
+	//
+	//		buy_page.firstnm_action();
+	//		buy_page.lastname_action();
+	//		buy_page.zip_code_action();
+	//		buy_page.continue_action();
+	//		Thread.sleep(2000);
+	//		buy_page.action_finish();
+	//		Thread.sleep(3000);
+	//		Logout_page.action_btn();;
+	//		Thread.sleep(3000);
+	//		
+	//		Logout_page.action_logout();
+
 
 }

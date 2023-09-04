@@ -5,88 +5,88 @@ import org.openqa.selenium.WebElement;
 
 public class buy_page extends Add_to_Cart
 {
-static By chkot=By.xpath("//button[@class=\"btn btn_action btn_medium checkout_button\"]");
-static By fname=By.xpath("//input[@class=\"input_error form_input\" and @id=\"first-name\"]");
-static By lname=By.xpath("//input[@class=\"input_error form_input\" and @id=\"last-name\"]");
-static By code=By.xpath("//input[@class=\"input_error form_input\" and @id=\"postal-code\"]");
-static By ctnu=By.id("continue");
-static By fns=By.id("finish");
+	static By chkot=By.xpath("//button[@class=\"btn btn_action btn_medium checkout_button\"]");
+	static By fname=By.xpath("//input[@class=\"input_error form_input\" and @id=\"first-name\"]");
+	static By lname=By.xpath("//input[@class=\"input_error form_input\" and @id=\"last-name\"]");
+	static By code=By.xpath("//input[@class=\"input_error form_input\" and @id=\"postal-code\"]");
+	static By ctnu=By.id("continue");
+	static By fns=By.id("finish");
 
 
-public static WebElement ckot() 
-{
-	WebElement ckeckout=drv.findElement(chkot);
-	return ckeckout;
-	
-}
-
-public static WebElement frtnm() 
-{
-	WebElement firstname=drv.findElement(fname);
-	return firstname;
-	
-}
-public static WebElement lstnm() 
-{
-	WebElement lastname=drv.findElement(lname);
-	return lastname;
-	
-}
-public static WebElement code() 
-{
-	WebElement zipcode=drv.findElement(code);
-	return zipcode;
-	
-}
-public static WebElement ctnuu() 
-{
-	WebElement countinue=drv.findElement(ctnu);
-	return countinue;
-	
-}
-public static WebElement fns() 
-{
-	WebElement finish=drv.findElement(fns);
-	return finish;
-	
-}
-
-public static void action_checkout() throws InterruptedException 
-{
-	Thread.sleep(3000);
-	ckot().click();
-}
-public static void firstnm_action(String first) throws InterruptedException 
-{
-	frtnm().sendKeys(first);
-	Thread.sleep(3000);
-}
-public static void lastname_action( String last) throws InterruptedException 
-{
-	lstnm().sendKeys(last);
-	Thread.sleep(3000);
-	
-}
-public static void zip_code_action(String zipcd) throws InterruptedException
-{
-	code().sendKeys(zipcd);
-	Thread.sleep(4000);
-	
-}
-public static void continue_action() 
-{
-	ctnuu().click();
-}
-public static void action_finish() 
-{
-	fns().click();
-	String res=drv.getTitle();
-	
-	System.out.println(res);
-	if(res.contains("Swag")) 
+	public static WebElement ckot() 
 	{
-		System.out.println("test pass");
+		WebElement ckeckout=drv.findElement(chkot);
+		return ckeckout;
+
 	}
-	
-}
+
+	public static WebElement frtnm() 
+	{
+		WebElement firstname=drv.findElement(fname);
+		return firstname;
+
+	}
+	public static WebElement lstnm() 
+	{
+		WebElement lastname=drv.findElement(lname);
+		return lastname;
+
+	}
+	public static WebElement code() 
+	{
+		WebElement zipcode=drv.findElement(code);
+		return zipcode;
+
+	}
+	public static WebElement ctnuu() 
+	{
+		WebElement countinue=drv.findElement(ctnu);
+		return countinue;
+
+	}
+	public static WebElement fns() 
+	{
+		WebElement finish=drv.findElement(fns);
+		return finish;
+
+	}
+
+	public static void action_checkout() throws InterruptedException 
+	{
+		Thread.sleep(3000);
+		ckot().click();
+	}
+	public static void firstnm_action(String first) throws InterruptedException 
+	{
+		frtnm().sendKeys(first);
+		Thread.sleep(3000);
+	}
+	public static void lastname_action( String last) throws InterruptedException 
+	{
+		lstnm().sendKeys(last);
+		Thread.sleep(3000);
+
+	}
+	public static void zip_code_action(String zipcd) throws InterruptedException
+	{
+		code().sendKeys(zipcd);
+		Thread.sleep(4000);
+
+	}
+	public static void continue_action() 
+	{
+		ctnuu().click();
+	}
+	public static void action_finish() 
+	{
+		fns().click();
+		String res=drv.getTitle();
+
+		System.out.println(res);
+		if(res.contains("Swag")) 
+		{
+			System.out.println("test pass");
+		}
+
+	}
 }

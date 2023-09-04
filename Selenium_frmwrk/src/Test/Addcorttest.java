@@ -9,7 +9,7 @@ public class Addcorttest
 		logintest.validcrenditional();
 		Add_to_Cart.action_cart();
 		Add_to_Cart.action_ct();
-	
+
 	}
 
 }

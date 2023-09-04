@@ -23,22 +23,22 @@ public class Login_page extends Basic_operation
 	{
 		WebElement pwdd=drv.findElement(pwd);
 		return pwdd;
-		
+
 	}
 
 	public static WebElement lgn() 
 	{
 		WebElement ln=drv.findElement(login);
 		return ln;
-		
+
 	}
-	
-	
+
+
 	public static void user_action(String Username) 
 	{
 		wait.until(ExpectedConditions.visibilityOfAllElements(id() ));
 		id().sendKeys(Username);
-		
+
 	}
 	public static void password_action(String password) 
 	{
