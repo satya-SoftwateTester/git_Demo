@@ -17,6 +17,8 @@ public class Create_Account extends create_account
 		logintest.validcrenditional();
 		Basic_operation.windowhandle();
 		create_account.action_fname("satya");
+		create_account.action_lname("rinku");
+		
 	}
 
 }
